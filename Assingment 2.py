@@ -1,3 +1,5 @@
+
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
@@ -5,9 +7,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 web = webdriver.Chrome(ChromeDriverManager().install())
 web.get('https://automationpractice.com/index.php')
 
-FirstName = "Printed Islamic Festivals"
+FirstSearch = "Lets go to places where we have never been before"
 first = web.find_element_by_xpath('//*[@id="search_query_top"]')
-first.send_keys(FirstName)
+first.send_keys(FirstSearch)
 
 Submit = web.find_element_by_xpath('//*[@id="searchbox"]/button')
 Submit.click()
